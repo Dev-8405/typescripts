@@ -230,3 +230,37 @@ function printId(id: string | number) {
 
 printId("dev");
 printId(101);
+
+
+function checkvalue(value:string|number){
+
+    if(typeof value === "string"){
+        console.log("string", value.toUpperCase());
+    }else{
+        console.log(number, value * 2);
+    }
+}
+
+checkvalue("hardik");
+checkvalue(10);
+
+    // Interfaces vs. Type Aliases in TypeScript
+ interface Student {
+    name: string;
+    age: number;
+}
+
+let student: Student = {
+    name: "Dev",
+    age: 21
+};
+
+console.log(student);
+   // Type Alias
+type ID = string | number;
+
+let userId: ID = 101;
+let employeeId: ID = "EMP101";
+
+console.log(userId);
+console.log(employeeId);

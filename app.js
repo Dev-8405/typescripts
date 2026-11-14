@@ -141,14 +141,33 @@ console.log(user2);
 //         console.log(id.toUpperCase());
 //     }
 // }
-function printid(id) {
+// function printid(id :string|number){
+//     if(typeof id ==="string"){
+//         console.log(id.toLocaleUpperCase());
+//     }else{
+//         console.log(id);
+//     }
+// }
+// printid("dev");
+// 
+function printId(id) {
     if (typeof id === "string") {
-        console.log(id.toLocaleUpperCase());
+        console.log(id.toUpperCase());
     }
     else {
         console.log(id);
     }
 }
-printid("dev");
-printid(101);
+printId("dev");
+printId(101);
+function checkvalue(value) {
+    if (typeof value === "string") {
+        console.log("string", value.toUpperCase());
+    }
+    else {
+        console.log(number, value * 2);
+    }
+}
+checkvalue("hardik");
+checkvalue(10);
 //# sourceMappingURL=app.js.map
