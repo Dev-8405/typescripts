@@ -264,3 +264,5 @@ let employeeId: ID = "EMP101";
 
 console.log(userId);
 console.log(employeeId);
+
+ 

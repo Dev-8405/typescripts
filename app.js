@@ -170,4 +170,13 @@ function checkvalue(value) {
 }
 checkvalue("hardik");
 checkvalue(10);
+let student = {
+    name: "Dev",
+    age: 21
+};
+console.log(student);
+let userId = 101;
+let employeeId = "EMP101";
+console.log(userId);
+console.log(employeeId);
 //# sourceMappingURL=app.js.map
