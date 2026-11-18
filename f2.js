@@ -56,4 +56,19 @@ function checkvalue(value) {
 }
 checkvalue("hello");
 checkvalue(50);
+//  TypeScript – Module System & Namespaces
+// export function greet() {
+//     return "Hello!";
+// }
+// import { greet } from "./app";
+// console.log(greet());
+// Namespaces
+var Student;
+(function (Student) {
+    function greet() {
+        return "Hello Student";
+    }
+    Student.greet = greet;
+})(Student || (Student = {}));
+console.log(Student.greet());
 //# sourceMappingURL=f2.js.map

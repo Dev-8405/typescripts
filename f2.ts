@@ -128,3 +128,26 @@ function checkvalue(value: string|number){
 
 checkvalue("hello");
 checkvalue(50);
+
+    //  TypeScript – Module System & Namespaces
+
+// export function greet() {
+//     return "Hello!";
+// }
+
+// import { greet } from "./app";
+
+// console.log(greet());
+
+        // Namespaces
+
+  namespace Student {
+
+    export function greet() {
+        return "Hello Student";
+    }
+
+}
+
+console.log(Student.greet());
+
